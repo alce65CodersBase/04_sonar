@@ -39,7 +39,7 @@ permissions:
 
 jobs:
   SonarCloud:
-    name: SonarCloud full repository
+    name: SonarCloud
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
