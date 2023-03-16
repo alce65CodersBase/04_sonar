@@ -28,6 +28,7 @@ module.exports = function (config) {
       dir: require("path").join(__dirname, "./coverage"),
       subdir: ".",
       reporters: [{ type: "lcov" }, { type: "text" }],
+      includeAllSources: true,
     },
     reporters: ["progress", "kjhtml"],
     browsers: ["Chrome"],
