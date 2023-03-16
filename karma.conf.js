@@ -9,6 +9,7 @@ module.exports = function (config) {
       require("karma-jasmine"),
       require("karma-chrome-launcher"),
       require("karma-jasmine-html-reporter"),
+      require("karma-mocha-reporter"),
       require("karma-coverage"),
       require("@angular-devkit/build-angular/plugins/karma"),
     ],
@@ -30,7 +31,7 @@ module.exports = function (config) {
       reporters: [{ type: "lcov" }, { type: "text" }],
       includeAllSources: true,
     },
-    reporters: ["progress", "kjhtml"],
+    reporters: ["mocha", "kjhtml"],
     browsers: ["Chrome"],
     restartOnFileChange: true,
   });
